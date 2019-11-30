@@ -1,72 +1,104 @@
 <template>
   <div class="container">
     <div>
-      <logo />
       <h1 class="title">
-        nuxtjs
+        Josh Piedimonte
       </h1>
-      <h2 class="subtitle">
-        My astonishing Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div class="subtitle-container">
+        <h2 class="subtitle">
+          Web Developer
+        </h2>
+        <div class="link-container">
+          <nuxt-link to="/about" class="link">About</nuxt-link>
+        </div>
+        <div class="link-container">
+          <nuxt-link to="/contact" class="link">Contact</nuxt-link>
+        </div>
+        <div class="link-container">
+          <nuxt-link to="/projects" class="link">Projects</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
+  export default {
+    components: {
+      Logo
+    }
   }
-}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style scoped>
+  .container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  .title {
+    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+    display: block;
+    font-weight: 300;
+    font-size: 100px;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .subtitle-container {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.links {
-  padding-top: 15px;
-}
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
+
+  .link {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .link,
+  .link:hover,
+  .link:focus,
+  .link:active {
+    color: #526488;
+    text-decoration: none;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+  }
+
+  .link-container .link::after {
+    top: 98%;
+    height: 2px;
+    width: 0%;
+    left: 5%;
+    background-color: #526488;
+    transition: 0.5s ease all .3s;
+  }
+
+  .link-container:hover .link::after {
+    width: 90%;
+    transition: 0.3s ease all;
+  }
 </style>
