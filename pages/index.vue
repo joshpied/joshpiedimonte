@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="inner">
       <h1 class="title">
         Josh Piedimonte
       </h1>
@@ -40,6 +40,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .inner {
+    padding: 0 10px 0 10px;
+    box-shadow: 0px 0px 0px 5px #2c7d95;
+    transition: box-shadow 0.6s linear;
+    margin: 0.5em;
+  }
+
+  .inner:hover {
+    box-shadow: 0px 0px 0px 10px #2c7d95;
   }
 
   .title {
@@ -105,6 +116,17 @@
   @media only screen and (max-width: 768px) {
     .container {
       min-height: 50vh;
+    }
+
+    .inner {
+      padding: 0;
+      box-shadow: 0px 0px;
+      transition: none;
+      margin: 0;
+    }
+
+    .inner:hover {
+      box-shadow: 0px 0px;
     }
 
     .title {
