@@ -101,4 +101,30 @@
     width: 90%;
     transition: 0.3s ease all;
   }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      min-height: 50vh;
+    }
+
+    .title {
+      font-size: 50px;
+      margin-top: 30px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .subtitle-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-container {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+  }
 </style>
