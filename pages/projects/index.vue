@@ -5,17 +5,17 @@
     <div class="projects">
       <InternalCard title="Scape"
                     description="Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. This was built using NativeScript/Angular"
-                    imageUrl="scape.png"
+                    imageUrl="scape.jpg"
                     route="projects/scape"
       />
       <Card title="MyHamiltonMap"
             description="This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city."
-            imageUrl="my-hamilton-map.png"
+            imageUrl="my-hamilton-map.jpg"
             url="my-hamilton-maps.now.sh"
       />
       <Card title="Course & Grades"
             description="Simple CRUD app app with filtering and sorting, built with Vue.js."
-            imageUrl="courses-and-grades.png"
+            imageUrl="courses-and-grades.jpg"
             url="courses-and-grades.now.sh"
       />
     </div>
