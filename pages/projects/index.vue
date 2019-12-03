@@ -3,18 +3,23 @@
     <Nav/>
     <h1 class="page-title">Projects</h1>
     <div class="projects">
-      <InternalCard title="Scape"
-                    description="Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. This was built using NativeScript/Angular"
+      <InternalCard title="Scape — Coming Soon!"
+                    description="Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend"
                     imageUrl="scape.jpg"
                     route="projects/scape"
       />
       <Card title="MyHamiltonMap"
-            description="This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city."
+            description="This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city"
             imageUrl="my-hamilton-map.jpg"
             url="my-hamilton-maps.now.sh"
       />
+      <Card title="Sampson Transmission"
+            description="Static site for Readers Choice Award winning auto repair shop Sampson Transmission."
+            imageUrl="sampson-transmission.jpg"
+            url="sampsontransmission.ca"
+      />
       <Card title="Course & Grades"
-            description="Simple CRUD app app with filtering and sorting, built with Vue.js."
+            description="Simple CRUD demo app app with filtering and sorting, built with Vue.js"
             imageUrl="courses-and-grades.jpg"
             url="courses-and-grades.now.sh"
       />
