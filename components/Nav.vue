@@ -47,7 +47,7 @@
   .link:hover,
   .link:focus,
   .link:active {
-    color: #526488;
+    color: var(--nav-link);
     text-decoration: none;
   }
 
@@ -61,7 +61,7 @@
     height: 2px;
     width: 0%;
     left: 5%;
-    background-color: #526488;
+    background-color: var(--nav-link);
     transition: 0.5s ease all .3s;
   }
 

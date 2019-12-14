@@ -31,10 +31,10 @@
   .contact-container {
     margin-left: 40%;
   }
+
   .contact-list {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     margin-top: 15px;
   }
 
@@ -77,7 +77,7 @@
   .link:hover,
   .link:focus,
   .link:active {
-    color: #526488;
+    color: var(--accent);
     text-decoration: none;
   }
 
@@ -91,7 +91,7 @@
     height: 2px;
     width: 0;
     left: 5%;
-    background-color: #526488;
+    background-color: var(--accent);
     transition: 0.5s ease all .3s;
   }
 

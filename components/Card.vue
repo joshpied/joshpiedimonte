@@ -56,16 +56,21 @@
   .card-text_title {
     font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: #35495e;
+    color: var(--primary);
     text-decoration: none;
     letter-spacing: 1px;
   }
 
   .card-text_description {
     margin-top: 5px;
-    color: #526488;
+    color: var(--accent);
     word-spacing: 2px;
     padding-bottom: 15px;
   }
 
+  @media (prefers-color-scheme: dark) {
+    .card {
+      background-color: rgba(250, 247, 248, 0.1);
+    }
+  }
 </style>

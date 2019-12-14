@@ -59,7 +59,7 @@
     display: block;
     font-weight: 300;
     font-size: 100px;
-    color: #35495e;
+    color: var(--primary);
     letter-spacing: 1px;
   }
 
@@ -73,7 +73,7 @@
   .subtitle {
     font-weight: 300;
     font-size: 42px;
-    color: #526488;
+    color: var(--accent);
     word-spacing: 5px;
     padding-bottom: 15px;
   }
@@ -90,7 +90,7 @@
   .link:hover,
   .link:focus,
   .link:active {
-    color: #526488;
+    color: var(--nav-link);
     text-decoration: none;
   }
 
@@ -104,7 +104,7 @@
     height: 2px;
     width: 0%;
     left: 5%;
-    background-color: #526488;
+    background-color: var(--nav-link);
     transition: 0.5s ease all .3s;
   }
 

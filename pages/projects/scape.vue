@@ -5,6 +5,7 @@
     <main class="articles">
       <article>
         <h2>Background</h2>
+        <hr/>
         <p>
           The emergence of the sharing economy is of particular interest to me. It is seemingly at the centre of
           peer-to-peer based businesses.
@@ -22,6 +23,7 @@
       </article>
       <article>
         <h2>What Scape Provides</h2>
+        <hr/>
         <p>
           Scape provides a platform for customers to request a Scape (i.e. getting their grass cut or snow shovelled
           from their driveways) by connecting them directly to a landscaper.
@@ -71,8 +73,14 @@
   }
 
   h2 {
+    color: var(--primary);
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  hr {
+    color: var(--primary);
+    display: none;
   }
 
   .articles {
@@ -90,7 +98,7 @@
     margin-top: 1em;
     font-weight: 300;
     font-size: 1.5em;
-    color: #526488;
+    color: var(--accent);
     letter-spacing: 1px;
   }
 
@@ -101,6 +109,10 @@
 
   figure {
     text-align: center;
+  }
+
+  figcaption {
+    color: var(--accent);
   }
 
   @media screen and (max-width: 990px) {
@@ -114,6 +126,12 @@
 
     .gallery {
       flex-wrap: wrap;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    hr {
+      display: block;
     }
   }
 </style>

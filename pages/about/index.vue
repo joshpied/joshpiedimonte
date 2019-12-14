@@ -22,10 +22,11 @@
 <style scoped>
   p.about {
     margin-top: 15px;
+    text-align: center;
     margin-left: 30%;
     margin-right: 30%;
     font-size: 24px;
-    color: #526488;
+    color: var(--accent);
     word-spacing: 5px;
     padding-bottom: 15px;
   }
