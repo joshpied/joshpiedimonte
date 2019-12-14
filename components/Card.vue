@@ -20,7 +20,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .card {
     text-decoration: none;
     margin: 50px 40px 50px 40px;

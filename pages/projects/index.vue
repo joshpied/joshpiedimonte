@@ -41,21 +41,7 @@
   }
 </script>
 
-<style>
-  .container {
-    margin: 20px;
-  }
-
-  .page-title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 300;
-    color: #35495e;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-top: 40px;
-  }
-
+<style scoped>
   .projects {
     display: flex;
     flex-wrap: wrap;

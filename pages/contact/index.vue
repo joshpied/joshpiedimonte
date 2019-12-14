@@ -2,15 +2,17 @@
   <div class="container">
     <Nav/>
     <h1 class="page-title">Contact</h1>
-    <div class="contact-list">
-      <figure class="contact-item">
-        <img src="/images/mail.png" alt="E-mail icon" width="50px"/>
-        <figcaption class="link-container"><a class="link" href="mailto:joshpied@gmail.com">joshpied@gmail.com</a></figcaption>
-      </figure>
-      <figure class="contact-item">
-        <img src="/images/github.png" alt="Github icon" width="50px"/>
-        <figcaption class="link-container"><a class="link" href="https://github.com/joshpied" target="_blank">GitHub</a></figcaption>
-      </figure>
+    <div class="contact-container">
+      <div class="contact-list">
+        <figure class="contact-item">
+          <img class="contact-icon" src="/images/mail.svg" alt="E-mail icon"/>
+          <figcaption class="link-container"><a class="link" href="mailto:joshpied@gmail.com">joshpied@gmail.com</a></figcaption>
+        </figure>
+        <figure class="contact-item">
+          <img class="contact-icon" src="/images/github.svg" alt="Github icon"/>
+          <figcaption class="link-container"><a class="link" href="https://github.com/joshpied" target="_blank">GitHub</a></figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </template>
@@ -25,20 +27,26 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .contact-container {
+    margin-left: 40%;
+  }
   .contact-list {
     display: flex;
     flex-direction: column;
+    /*align-items: center;*/
     margin-top: 15px;
-    margin-left: 45%;
-    margin-right: 45%;
   }
 
   .contact-item {
     display: flex;
     flex-direction: row;
-    text-align: center;
     align-items: center;
+    margin-top: 15px;
+  }
+
+  .contact-icon {
+    width: 40px;
   }
 
   .contact-item figcaption {
@@ -46,7 +54,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    .contact-list {
+    .contact-container {
       margin-top: 5px;
       margin-left: 10%;
       margin-right: 10%;
@@ -81,7 +89,7 @@
   .link-container .link::after {
     top: 98%;
     height: 2px;
-    width: 0%;
+    width: 0;
     left: 5%;
     background-color: #526488;
     transition: 0.5s ease all .3s;
