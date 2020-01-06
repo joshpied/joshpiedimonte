@@ -47,6 +47,7 @@
 
   .contact-icon {
     width: 40px;
+    filter: invert(36%) sepia(48%) saturate(404%) hue-rotate(182deg) brightness(92%) contrast(82%);
   }
 
   .contact-item figcaption {
@@ -58,6 +59,12 @@
       margin-top: 5px;
       margin-left: 10%;
       margin-right: 10%;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .contact-icon {
+      filter: invert(100%) sepia(2%) saturate(37%) hue-rotate(150deg) brightness(117%) contrast(84%);
     }
   }
 
