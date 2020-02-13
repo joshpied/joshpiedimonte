@@ -16,6 +16,12 @@
         url="github.com/joshpied/calcio"
       />
       <Card
+        title="QuickSnacks"
+        description="Digital recipe organizer built with React and Firebase. Uses a full WYSIWYG editor with user content being synced in real time"
+        imageUrl="quicksnacks.jpg"
+        url="quick-snacks.firebaseapp.com"
+      />
+      <Card
         title="MyHamiltonMap"
         description="This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city"
         imageUrl="my-hamilton-map.jpg"
