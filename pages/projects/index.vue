@@ -10,6 +10,12 @@
         route="projects/scape"
       />
       <Card
+        title="Coronavirus Italy Tracker"
+        description="Dashboard to track the most recent statistics relating to COVID-19 in Italy built with React, Mapbox, and Chartsjs. Uses a Node API that I also built that uses government posted data that updates daily"
+        imageUrl="coronavirus-italy-tracker.jpg"
+        url="coronavirus-italy-tracker.now.sh"
+      />
+      <Card
         title="Calcio CLI"
         description="Command line application to view the latest fixtures, standings, scores, and transfers in Serie A, built with Node"
         imageUrl="calcio.jpg"
