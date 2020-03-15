@@ -11,7 +11,7 @@
       />
       <Card
         title="Coronavirus Italy Tracker"
-        description="Dashboard to track the most recent statistics relating to COVID-19 in Italy built with React, Mapbox, and Chartsjs. Uses a Node API that I also built that uses government posted data that updates daily"
+        description="Dashboard tracking the most recent statistics relating to COVID-19 in Italy built with React, Mapbox, and Chart.js. Uses a Node API that I built that uses government posted data that updates daily"
         imageUrl="coronavirus-italy-tracker.jpg"
         url="coronavirus-italy-tracker.now.sh"
       />
