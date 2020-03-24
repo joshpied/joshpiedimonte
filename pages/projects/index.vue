@@ -9,11 +9,11 @@
         imageUrl="scape.jpg"
         route="projects/scape"
       />
-      <Card
-        title="Coronavirus Italy Tracker"
-        description="Dashboard tracking the most recent statistics relating to COVID-19 in Italy built with React, Mapbox, and Chart.js. Uses a Node API that I built that uses government posted data that updates daily"
-        imageUrl="coronavirus-italy-tracker.jpg"
-        url="coronavirus-italy-tracker.now.sh"
+      <InternalCard
+        title="Coronavirus Projects"
+        description="Several dashboards and APIs made with React and Node.js, respectively, related to the COVID-19 outbreak"
+        imageUrl="coronavirus-world-tracker.jpg"
+        route="projects/coronavirus"
       />
       <Card
         title="Calcio CLI"

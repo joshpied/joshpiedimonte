@@ -38,16 +38,13 @@ export default {
   -webkit-box-shadow: 0 0 12px -5px #222;
   -moz-box-shadow: 0 0 12px -5px #222;
   box-shadow: 0 0 12px -5px #222;
+  opacity: 0.8;
 }
 
 .card-img {
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: auto;
-}
-
-.card-img:hover {
-  opacity: 0.7;
 }
 
 .card-text {
