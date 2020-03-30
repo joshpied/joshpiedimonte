@@ -19,7 +19,7 @@
         title="Coronavirus World API"
         description="Rest API built with Node using Johns Hopkins CSSE datase. Data formatted to get daily outbreak stats over time by country"
         imageUrl="coronavirus-world-api.jpg"
-        url="coronavirus-world-api.now.sh"
+        url="coronavirus-world-api.now.sh/api"
       />
 			<Card
         title="Coronavirus Italy API"
