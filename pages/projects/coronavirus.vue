@@ -16,6 +16,12 @@
         url="coronavirus-italy-tracker.now.sh"
       />
 			<Card
+        title="Coronavirus World API"
+        description="Rest API built with Node using Johns Hopkins CSSE datase. Data formatted to get daily outbreak stats over time by country"
+        imageUrl="coronavirus-world-api.jpg"
+        url="coronavirus-world-api.now.sh"
+      />
+			<Card
         title="Coronavirus Italy API"
         description="Rest API built with Node, pulling data daily from the Italian government dataset"
         imageUrl="coronavirus-italia-api.jpg"
