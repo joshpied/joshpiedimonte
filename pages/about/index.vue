@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <Nav/>
+  <div>
     <h1 class="page-title">About</h1>
     <p class="about">
       Hi! My name's Josh and have been a web developer since 2017. Have a look around my projects and feel free to contact
@@ -8,16 +7,6 @@
     </p>
   </div>
 </template>
-
-<script>
-  import Nav from '~/components/Nav.vue'
-
-  export default {
-    components: {
-      Nav
-    }
-  }
-</script>
 
 <style scoped>
   p.about {

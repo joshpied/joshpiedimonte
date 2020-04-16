@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-container">
     <div class="inner">
       <h1 class="title">
         Josh Piedimonte
@@ -23,130 +23,132 @@
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo.vue';
 
-  export default {
-    components: {
-      Logo
-    }
+export default {
+  layout: 'no_layout',
+  components: {
+    Logo
   }
+};
 </script>
 
 <style scoped>
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.home-container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inner {
+  padding: 0 10px 0 10px;
+  box-shadow: 0px 0px 0px 5px #2c7d95;
+  transition: box-shadow 0.6s linear;
+  margin: 0.5em;
+}
+
+.inner:hover {
+  box-shadow: 0px 0px 0px 10px #2c7d95;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.subtitle-container {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: var(--accent);
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.link,
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--nav-link);
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+}
+
+.link-container .link::after {
+  top: 98%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: var(--nav-link);
+  transition: 0.5s ease all 0.3s;
+}
+
+.link-container:hover .link::after {
+  width: 90%;
+  transition: 0.3s ease all;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container {
+    min-height: 50vh;
+    margin: 5%;
   }
 
   .inner {
-    padding: 0 10px 0 10px;
-    box-shadow: 0px 0px 0px 5px #2c7d95;
-    transition: box-shadow 0.6s linear;
-    margin: 0.5em;
+    padding: 0;
+    box-shadow: 0px 0px;
+    transition: none;
+    margin: 0;
   }
 
   .inner:hover {
-    box-shadow: 0px 0px 0px 10px #2c7d95;
+    box-shadow: 0px 0px;
   }
 
   .title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: var(--primary);
-    letter-spacing: 1px;
-  }
-
-  .subtitle-container {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 50px;
+    margin-top: 30px;
   }
 
   .subtitle {
-    font-weight: 300;
-    font-size: 42px;
-    color: var(--accent);
-    word-spacing: 5px;
-    padding-bottom: 15px;
+    font-size: 30px;
   }
 
-  .link {
-    position: relative;
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
+  .subtitle-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
-  .link,
-  .link:hover,
-  .link:focus,
-  .link:active {
-    color: var(--nav-link);
-    text-decoration: none;
+  .link-container {
+    margin-top: 40px;
+    margin-left: 0;
   }
-
-  .link::after {
-    content: "";
-    position: absolute;
-  }
-
-  .link-container .link::after {
-    top: 98%;
-    height: 2px;
-    width: 0%;
-    left: 5%;
-    background-color: var(--nav-link);
-    transition: 0.5s ease all .3s;
-  }
-
-  .link-container:hover .link::after {
-    width: 90%;
-    transition: 0.3s ease all;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .container {
-      min-height: 50vh;
-    }
-
-    .inner {
-      padding: 0;
-      box-shadow: 0px 0px;
-      transition: none;
-      margin: 0;
-    }
-
-    .inner:hover {
-      box-shadow: 0px 0px;
-    }
-
-    .title {
-      font-size: 50px;
-      margin-top: 30px;
-    }
-
-    .subtitle {
-      font-size: 30px;
-    }
-
-    .subtitle-container {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .link-container {
-      margin-top: 40px;
-      margin-left: 0;
-    }
-  }
+}
 </style>

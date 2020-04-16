@@ -1,25 +1,16 @@
 <template>
-  <div class="container">
-    <Nav />
+  <div>
     <nuxt />
   </div>
 </template>
-
-<script>
-import Nav from '~/components/Nav.vue';
-
-export default {
-  components: {
-    Nav
-  }
-};
-</script>
 
 <style>
 html {
   background: var(--secondary);
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',*/
+  /*  Roboto, 'Helvetica Neue', Arial, sans-serif;*/
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -34,9 +25,5 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.container {
-  margin: 2%;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <Nav />
+  <div>
     <h1 class="page-title">Contact</h1>
     <div class="contact-container">
       <div class="contact-list">
@@ -32,16 +31,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Nav from '~/components/Nav.vue';
-
-export default {
-  components: {
-    Nav
-  }
-};
-</script>
 
 <style scoped>
 .contact-container {

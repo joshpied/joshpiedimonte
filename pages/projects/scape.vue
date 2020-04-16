@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <Nav />
+  <div>
     <h1 class="page-title">Scape</h1>
     <main class="articles">
       <article>
@@ -68,16 +67,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Nav from '~/components/Nav.vue';
-
-export default {
-  components: {
-    Nav
-  }
-};
-</script>
 
 <style scoped>
 h2 {

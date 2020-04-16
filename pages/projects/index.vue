@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <Nav />
+  <div>
     <h1 class="page-title">Projects</h1>
     <div class="projects">
       <Card
@@ -13,12 +12,10 @@
 </template>
 
 <script>
-import Nav from '~/components/Nav.vue';
 import Card from '~/components/Card.vue';
 
 export default {
   components: {
-    Nav,
     Card
   },
   data() {
