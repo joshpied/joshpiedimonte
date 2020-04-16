@@ -103,4 +103,15 @@ nav {
       brightness(117%) contrast(84%);
   }
 }
+
+@media only screen and (max-width: 520px) {
+  .link {
+    flex-direction: column;
+    font-size: 0.75em;
+  }
+
+  .link-text {
+    margin-left: 0;
+  }
+}
 </style>
