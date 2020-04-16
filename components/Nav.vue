@@ -1,72 +1,106 @@
 <template>
   <nav>
     <div class="link-container">
-      <nuxt-link to="/" class="link">Home</nuxt-link>
+      <nuxt-link to="/" class="link">
+        <img class="link-icon" src="/images/icons/home.svg" alt="Home icon" />
+        <span class="link-text">Home</span>
+      </nuxt-link>
     </div>
     <div class="link-container">
-      <nuxt-link to="/about" class="link">About</nuxt-link>
+      <nuxt-link to="/about" class="link">
+        <img class="link-icon" src="/images/icons/user.svg" alt="About icon" />
+        <span class="link-text">About</span>
+      </nuxt-link>
     </div>
     <div class="link-container">
-      <nuxt-link to="/contact" class="link">Contact</nuxt-link>
+      <nuxt-link to="/contact" class="link">
+        <img class="link-icon" src="/images/icons/inbox.svg" alt="Inbox icon" />
+        <span class="link-text">Contact</span>
+      </nuxt-link>
     </div>
     <div class="link-container">
-      <nuxt-link to="/projects" class="link">Projects</nuxt-link>
+      <nuxt-link to="/projects" class="link">
+        <img
+          class="link-icon"
+          src="/images/icons/folder.svg"
+          alt="Folder icon"
+        />
+        <span class="link-text">Projects</span>
+      </nuxt-link>
     </div>
   </nav>
 </template>
 
 <style scoped>
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
-
-  @media only screen and (max-width: 768px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-    }
-    .link-container {
-      margin-left: 0 !important;
-    }
-  }
-
   .link-container {
-    margin-left: 2em;
+    margin-left: 0 !important;
   }
+}
 
-  .link {
-    position: relative;
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-  }
+.link-container {
+  margin-left: 2em;
+}
 
-  .link,
-  .link:hover,
-  .link:focus,
-  .link:active {
-    color: var(--nav-link);
-    text-decoration: none;
-  }
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+}
 
-  .link::after {
-    content: "";
-    position: absolute;
-  }
+.link,
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--nav-link);
+  text-decoration: none;
+}
 
-  .link-container .link::after {
-    top: 98%;
-    height: 2px;
-    width: 0%;
-    left: 5%;
-    background-color: var(--nav-link);
-    transition: 0.5s ease all .3s;
-  }
+.link::after {
+  content: '';
+  position: absolute;
+}
 
-  .link-container:hover .link::after {
-    width: 90%;
-    transition: 0.3s ease all;
+.link-container .link::after {
+  top: 98%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: var(--nav-link);
+  transition: 0.5s ease all 0.3s;
+}
+
+.link-container:hover .link::after {
+  width: 90%;
+  transition: 0.3s ease all;
+}
+
+.link-icon {
+  filter: invert(24%) sepia(16%) saturate(1215%) hue-rotate(170deg)
+    brightness(95%) contrast(83%);
+}
+
+.link-text {
+  margin-left: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .link-icon {
+    filter: invert(100%) sepia(2%) saturate(37%) hue-rotate(150deg)
+      brightness(117%) contrast(84%);
   }
+}
 </style>

@@ -80,11 +80,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 h2 {
   color: var(--primary);
   margin-top: 1em;
