@@ -3,47 +3,10 @@
     <Nav />
     <h1 class="page-title">Projects</h1>
     <div class="projects">
-      <InternalCard
-        title="Scape — Coming Soon!"
-        description="Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend"
-        imageUrl="scape.jpg"
-        route="projects/scape"
-      />
-      <InternalCard
-        title="Coronavirus Projects"
-        description="Several dashboards and APIs made with React and Node.js, respectively, related to the COVID-19 outbreak"
-        imageUrl="coronavirus-world-tracker.jpg"
-        route="projects/coronavirus"
-      />
       <Card
-        title="Calcio CLI"
-        description="Command line application to view the latest fixtures, standings, scores, and transfers in Serie A, built with Node"
-        imageUrl="calcio.jpg"
-        url="github.com/joshpied/calcio"
-      />
-      <Card
-        title="QuickSnacks"
-        description="Digital recipe organizer built with React and Firebase. Uses a full WYSIWYG editor with user content being synced in real time"
-        imageUrl="quicksnacks.jpg"
-        url="quick-snacks.firebaseapp.com"
-      />
-      <Card
-        title="MyHamiltonMap"
-        description="This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city"
-        imageUrl="my-hamilton-map.jpg"
-        url="my-hamilton-maps.now.sh"
-      />
-      <Card
-        title="Sampson Transmission"
-        description="Static site for Readers Choice Award winning auto repair shop Sampson Transmission"
-        imageUrl="sampson-transmission.jpg"
-        url="sampsontransmission.ca"
-      />
-      <Card
-        title="Course & Grades"
-        description="Simple CRUD demo app app with filtering and sorting, built with Vue.js"
-        imageUrl="courses-and-grades.jpg"
-        url="courses-and-grades.now.sh"
+        v-for="project in projects"
+        v-bind:key="project.title"
+        v-bind:project="project"
       />
     </div>
   </div>
@@ -52,13 +15,73 @@
 <script>
 import Nav from '~/components/Nav.vue';
 import Card from '~/components/Card.vue';
-import InternalCard from '~/components/InternalCard.vue';
 
 export default {
   components: {
     Nav,
-    Card,
-    InternalCard
+    Card
+  },
+  data() {
+    return {
+      projects: [
+        {
+          title: 'Scape — Coming Soon!',
+          description:
+            'Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend',
+          imageUrl: 'scape.jpg',
+          route: 'projects/scape',
+          type: 'internal'
+        },
+        {
+          title: 'Coronavirus Projects',
+          description:
+            'Several dashboards and APIs made with React and Node.js, respectively, related to the COVID-19 outbreak',
+          imageUrl: 'coronavirus-world-tracker.jpg',
+          route: 'projects/coronavirus',
+          type: 'internal'
+        },
+        {
+          title: 'Calcio CLI',
+          description:
+            'Command line application to view the latest fixtures, standings, scores, and transfers in Serie A, built with Node',
+          imageUrl: 'calcio.jpg',
+          url: 'github.com/joshpied/calcio',
+          type: 'external'
+        },
+        {
+          title: 'QuickSnacks',
+          description:
+            'Digital recipe organizer built with React and Firebase. Uses a full WYSIWYG editor with user content being synced in real time',
+          imageUrl: 'quicksnacks.jpg',
+          url: 'quick-snacks.firebaseapp.com',
+          type: 'external'
+        },
+        {
+          title: 'MyHamiltonMap',
+          description:
+            'This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city',
+          imageUrl: 'my-hamilton-map.jpg',
+          url: 'my-hamilton-maps.now.sh',
+          type: 'external'
+        },
+        {
+          title: 'Sampson Transmission',
+          description:
+            'Static site for Readers Choice Award winning auto repair shop Sampson Transmission',
+          imageUrl: 'sampson-transmission.jpg',
+          url: 'sampsontransmission.ca',
+          type: 'external'
+        },
+        {
+          title: 'Course & Grades',
+          description:
+            'Simple CRUD demo app app with filtering and sorting, built with Vue.js',
+          imageUrl: 'courses-and-grades.jpg',
+          url: 'courses-and-grades.now.sh',
+          type: 'external'
+        }
+      ]
+    };
   }
 };
 </script>

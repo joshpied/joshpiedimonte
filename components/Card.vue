@@ -1,31 +1,60 @@
 <template>
-  <a class="card" :href="'https://' + url" target="_blank">
-    <img
-      :src="'/images/project-images/' + imageUrl"
-      class="card-img"
-      alt="My Hamilton Map web page"
-      width="460"
-      height="345"
-    />
-    <div class="card-text">
-      <h4 class="card-text_title">{{ title }}</h4>
-      <p class="card-text_description">
-        {{ description }}
-      </p>
-    </div>
-  </a>
+  <div class="card">
+    <a
+      class="card-link"
+      v-if="project.type === 'external'"
+      :href="'https://' + project.url"
+      target="_blank"
+    >
+      <img
+        :src="'/images/project-images/' + project.imageUrl"
+        class="card-img"
+        alt="My Hamilton Map web page"
+        width="460"
+        height="345"
+      />
+      <div class="card-text">
+        <h4 class="card-text_title">{{ project.title }}</h4>
+        <p class="card-text_description">
+          {{ project.description }}
+        </p>
+      </div>
+    </a>
+
+    <nuxt-link
+      class="card-link"
+      v-if="project.type === 'internal'"
+      :to="project.route"
+    >
+      <img
+        :src="'/images/project-images/' + project.imageUrl"
+        class="card-img"
+        alt="My Hamilton Map web page"
+        width="460"
+        height="345"
+      />
+      <div class="card-text">
+        <h4 class="card-text_title">{{ project.title }}</h4>
+        <p class="card-text_description">
+          {{ project.description }}
+        </p>
+      </div>
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
 export default {
-  props: ['title', 'description', 'imageUrl', 'url']
+  props: {
+    project: Object
+  }
 };
 </script>
 
 <style scoped>
 .card {
   text-decoration: none;
-  margin: 50px 40px 50px 40px;
+  margin: 20px 30px 20px 30px;
   width: 450px;
   border-radius: 10px;
   background-color: rgba(250, 247, 248, 0.5);
@@ -39,6 +68,10 @@ export default {
   -moz-box-shadow: 0 0 12px -5px #222;
   box-shadow: 0 0 12px -5px #222;
   opacity: 0.8;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card-img {
