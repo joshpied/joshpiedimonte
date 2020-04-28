@@ -1,22 +1,16 @@
 <template>
   <div>
     <h1 class="page-title">Projects</h1>
-    <div class="projects">
-      <Card
-        v-for="project in projects"
-        v-bind:key="project.title"
-        v-bind:project="project"
-      />
-    </div>
+    <CardGallery v-bind:projects="projects" />
   </div>
 </template>
 
 <script>
-import Card from '~/components/Card.vue';
+import CardGallery from '~/components/CardGallery.vue';
 
 export default {
   components: {
-    Card
+    CardGallery
   },
   data() {
     return {
@@ -82,11 +76,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-</style>

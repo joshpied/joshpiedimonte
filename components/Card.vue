@@ -53,9 +53,9 @@ export default {
 
 <style scoped>
 .card {
+  flex: 0 1 350px;
   text-decoration: none;
-  margin: 20px 30px 20px 30px;
-  width: 450px;
+  margin: 1em;
   border-radius: 10px;
   background-color: rgba(250, 247, 248, 0.5);
   -webkit-box-shadow: 0 4px 6px -6px #222;
