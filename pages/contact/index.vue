@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1 class="page-title">Contact</h1>
     <div class="contact-container">
       <div class="contact-list">
@@ -29,7 +29,7 @@
         </figure>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <style scoped>

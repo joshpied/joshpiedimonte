@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <main>
     <h1 class="page-title">About</h1>
     <p class="about">
       Hi! My name's Josh and have been a web developer since 2017. Have a look around my projects and feel free to contact
       me for any requests or questions.
     </p>
-  </div>
+  </main>
 </template>
 
 <style scoped>
