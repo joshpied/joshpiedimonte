@@ -23,21 +23,3 @@
   text-align: center;
   margin-top: 40px;
 }
-
-.layout-enter-active,
-.layout-leave-active {
-  transition: opacity 0.5s;
-}
-.layout-enter,
-.layout-leave-active {
-  opacity: 0.5;
-}
-
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0.5;
-}
