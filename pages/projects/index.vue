@@ -16,7 +16,7 @@ export default {
     return {
       projects: [
         {
-          title: 'Scape — Coming Soon!',
+          title: 'Scape',
           description:
             'Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend',
           imageUrl: 'scape.jpg',
@@ -48,11 +48,11 @@ export default {
           type: 'external'
         },
         {
-          title: 'MyHamiltonMap',
+          title: 'F1 CLI',
           description:
-            'This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city',
-          imageUrl: 'my-hamilton-map.jpg',
-          url: 'my-hamilton-maps.now.sh',
+            'Command line application to view the latest standings and race results for the current Formula 1 season, written in Ruby',
+          imageUrl: 'f1.jpg',
+          url: 'github.com/joshpied/f1-cli',
           type: 'external'
         },
         {
@@ -64,13 +64,21 @@ export default {
           type: 'external'
         },
         {
-          title: 'Course & Grades',
+          title: 'MyHamiltonMap',
           description:
-            'Simple CRUD demo app app with filtering and sorting, built with Vue.js',
-          imageUrl: 'courses-and-grades.jpg',
-          url: 'courses-and-grades.now.sh',
+            'This app provides a comprehensive list of activities for visitors of Hamilton to build their own custom map of the city',
+          imageUrl: 'my-hamilton-map.jpg',
+          url: 'my-hamilton-maps.now.sh',
           type: 'external'
-        }
+        },
+        // {
+        //   title: 'Course & Grades',
+        //   description:
+        //     'Simple CRUD demo app app with filtering and sorting, built with Vue.js',
+        //   imageUrl: 'courses-and-grades.jpg',
+        //   url: 'courses-and-grades.now.sh',
+        //   type: 'external'
+        // }
       ]
     };
   }
