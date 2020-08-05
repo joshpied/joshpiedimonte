@@ -10,9 +10,7 @@
             alt="E-mail icon"
           />
           <figcaption class="link-container">
-            <a class="link" href="mailto:joshpied@gmail.com"
-              >joshpied@gmail.com
-            </a>
+            <a class="link" href="mailto:joshpied@gmail.com">Email</a>
           </figcaption>
         </figure>
         <figure class="contact-item">
