@@ -16,6 +16,13 @@ export default {
     return {
       projects: [
         {
+          title: 'Baker Buddy — Coming Soon!',
+          description: `A baker's companion app built with React Native. Baker Buddy simplifies the process of manually calculating individual recipe measurement by taking the end dough weight and ingredient perctanges and the app handles the rest`,
+          imageUrl: 'baker-buddy.jpg',
+          route: 'projects/bakerBuddy',
+          type: 'internal'
+        },
+        {
           title: 'Scape',
           description:
             'Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend',
@@ -70,7 +77,7 @@ export default {
           imageUrl: 'my-hamilton-map.jpg',
           url: 'my-hamilton-maps.now.sh',
           type: 'external'
-        },
+        }
         // {
         //   title: 'Course & Grades',
         //   description:

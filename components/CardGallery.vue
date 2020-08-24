@@ -23,14 +23,9 @@ export default {
 
 <style scoped>
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 1281px) {
-  .projects {
-    justify-content: space-evenly;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
 </style>
