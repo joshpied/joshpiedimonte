@@ -24,7 +24,8 @@ export default {
 <style scoped>
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
 }
