@@ -13,7 +13,29 @@
       <h1 class="bb-h1">Baker Buddy</h1>
     </header>
 
-    <section class="bb-section bb-features">
+    <nav class="bb-nav">
+      <div class="link-container">
+        <a href="#features" class="link">Features</a>
+      </div>
+      <div class="link-container">
+        <a href="#downloads" class="link">Downloads</a>
+      </div>
+      <div class="link-container">
+        <a href="#roadmap" class="link">Roadmap</a>
+      </div>
+    </nav>
+
+    <section class="bb-section bb-description" id="description">
+      <p>
+        Baker Buddy is a mobile application built with React Native for home
+        bakers. When determining the correct formula for a recipe, bakers use
+        baker's percentages — weights calculated as a percentage of the flour
+        weight. This app allows a baker to simply enter their ingredient
+        percentages and all the calculations are taken care of.
+      </p>
+    </section>
+
+    <section class="bb-section bb-features" id="features">
       <h2 class="bb-h2 bb-feature-title">How it Works</h2>
       <div class="bb-feature-left">
         <div class="bb-feature-description">
@@ -93,12 +115,12 @@
       </div>
     </section>
 
-    <section class="bb-section bb-download">
+    <section class="bb-section bb-download" id="downloads">
       <h2 class="bb-h2">Get the App</h2>
       <p>Coming soon to the App Store and Google Play!</p>
     </section>
 
-    <section class="bb-section bb-roadmap">
+    <section class="bb-section bb-roadmap" id="roadmap">
       <h2 class="bb-h2">Roadmap</h2>
       <ul>
         <li>Web App</li>
@@ -126,12 +148,27 @@
   margin-bottom: 0.5em;
 }
 
+.bb-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.link-container {
+  margin: 6px;
+}
+
 .bb-section {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .bb-section:last-child {
   margin-bottom: 10em;
+}
+
+.bb-description {
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 .bb-feature-title {
@@ -165,7 +202,7 @@
 
 .bb-feature-right {
   display: grid;
-  grid-template-columns: 1fr minmax(100px, 3fr) minmax(200px, 2fr) 1fr;
+  grid-template-columns: 1fr minmax(100px, 2fr) minmax(200px, 3fr) 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     'title title title title'
@@ -185,7 +222,12 @@
 }
 
 @media (max-width: 700px) {
-  .bb-feature-description{
+  .bb-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bb-feature-description {
     margin-bottom: 1em;
   }
   .bb-feature-image {

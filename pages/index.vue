@@ -79,41 +79,6 @@ export default {
   padding-bottom: 15px;
 }
 
-.link {
-  position: relative;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.link,
-.link:hover,
-.link:focus,
-.link:active {
-  color: var(--nav-link);
-  text-decoration: none;
-}
-
-.link::after {
-  content: '';
-  position: absolute;
-}
-
-.link-container .link::after {
-  top: 98%;
-  height: 2px;
-  width: 0%;
-  left: 5%;
-  background-color: var(--nav-link);
-  transition: 0.5s ease all 0.3s;
-}
-
-.link-container:hover .link::after {
-  width: 90%;
-  transition: 0.3s ease all;
-}
-
 @media only screen and (max-width: 768px) {
   .home-container {
     min-height: 50vh;

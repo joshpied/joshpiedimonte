@@ -94,7 +94,7 @@ article p {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   margin-top: 1em;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1em;
   color: var(--accent);
   letter-spacing: 1px;
 }
