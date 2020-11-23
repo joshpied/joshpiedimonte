@@ -17,10 +17,10 @@ export default {
       projects: [
         {
           title: 'Baker Buddy — Coming Soon!',
-          description: `A baker's companion app built with React Native. Baker Buddy simplifies the process of manually calculating individual recipe measurement by taking the end dough weight and ingredient perctanges and the app handles the rest`,
+          description: `A baker's companion app built with React Native. Baker Buddy simplifies the process of manually calculating individual recipe measurements by taking the end dough weight and ingredient perctanges and the app handles the rest`,
           imageUrl: 'baker-buddy.jpg',
-          route: 'projects/bakerBuddy',
-          type: 'internal'
+          route: 'baker-buddy.vercel.app',
+          type: 'external'
         },
         {
           title: 'Scape',
