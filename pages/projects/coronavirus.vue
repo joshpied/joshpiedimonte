@@ -34,7 +34,7 @@ export default {
         {
           title: 'Coronavirus World API',
           description:
-            'Rest API built with Node using Johns Hopkins CSSE datase. Data formatted to get daily outbreak stats over time by country',
+            'Rest API built with Node using Johns Hopkins CSSE dataset. Data formatted to get daily outbreak stats over time by country',
           imageUrl: 'coronavirus-world-api.jpg',
           url: 'coronavirus-world-api.now.sh/api',
           type: 'external'
