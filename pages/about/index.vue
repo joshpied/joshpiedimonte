@@ -16,7 +16,7 @@ p.about {
   margin-left: 30%;
   margin-right: 30%;
   font-size: 24px;
-  color: var(--accent);
+  color: var(--text);
   word-spacing: 5px;
   padding-bottom: 15px;
 }

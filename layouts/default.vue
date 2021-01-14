@@ -17,7 +17,7 @@ export default {
 
 <style>
 html {
-  background: var(--secondary);
+  background: var(--background);
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;

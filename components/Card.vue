@@ -57,6 +57,7 @@ export default {
   text-decoration: none;
   margin: 1em;
   border-radius: 10px;
+  border: 2px solid var(--accent);
   background-color: rgba(250, 247, 248, 0.5);
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
@@ -75,7 +76,7 @@ export default {
 }
 
 .card-img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
   width: 100%;
   height: auto;
 }
@@ -88,14 +89,13 @@ export default {
 .card-text_title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: var(--primary);
   text-decoration: none;
   letter-spacing: 1px;
 }
 
 .card-text_description {
   margin-top: 5px;
-  color: var(--accent);
+  color: var(--text);
   word-spacing: 2px;
   padding-bottom: 15px;
 }

@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <main class="contact-container">
     <h1 class="page-title">Contact</h1>
-    <div class="contact-container">
+    
       <div class="contact-list">
         <figure class="contact-item">
           <img
@@ -26,13 +26,16 @@
           </figcaption>
         </figure>
       </div>
-    </div>
+
   </main>
 </template>
 
 <style scoped>
 .contact-container {
-  margin-left: 40%;
+  /* margin-left: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-list {

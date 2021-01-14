@@ -2,7 +2,7 @@
   <div class="home-container">
     <div class="inner">
       <h1 class="title">
-        Josh Piedimonte
+        Josh &nbsp; Piedimonte
       </h1>
       <div class="subtitle-container">
         <h2 class="subtitle">
@@ -55,13 +55,11 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: var(--primary);
-  letter-spacing: 1px;
+  color: var(--text);
+  letter-spacing: 6px;
 }
 
 .subtitle-container {
@@ -72,9 +70,11 @@ export default {
 }
 
 .subtitle {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 42px;
-  color: var(--accent);
+  color: var(--text);
   word-spacing: 5px;
   padding-bottom: 15px;
 }

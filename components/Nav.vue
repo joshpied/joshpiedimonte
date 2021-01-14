@@ -57,8 +57,8 @@ nav {
 }
 
 .link-icon {
-  filter: invert(24%) sepia(16%) saturate(1215%) hue-rotate(170deg)
-    brightness(95%) contrast(83%);
+  filter: invert(43%) sepia(14%) saturate(1946%) hue-rotate(147deg)
+    brightness(95%) contrast(89%);
 }
 
 .link-text {

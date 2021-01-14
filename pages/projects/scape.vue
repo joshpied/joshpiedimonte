@@ -70,13 +70,12 @@
 
 <style scoped>
 h2 {
-  color: var(--primary);
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 hr {
-  color: var(--primary);
+  color: var(--text);
   display: none;
 }
 
@@ -95,7 +94,7 @@ article p {
   margin-top: 1em;
   font-weight: 300;
   font-size: 1em;
-  color: var(--accent);
+  color: var(--text);
   letter-spacing: 1px;
 }
 
@@ -109,7 +108,7 @@ figure {
 }
 
 figcaption {
-  color: var(--accent);
+  color: var(--text);
 }
 
 @media screen and (max-width: 990px) {
