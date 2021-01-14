@@ -97,7 +97,7 @@ export default {
   }
 
   .title {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 30px;
   }
 
