@@ -23,6 +23,13 @@ export default {
           type: 'external'
         },
         {
+          title: 'FinTrack',
+          description: 'A personal finance tracker that allows a user to enter daily transactions, with monthly and yearly reports automatically generated to track spending. FinTrack was built using Ruby on Rails with a MySql database and Tailwind for styling',
+          imageUrl: 'fintrack.jpg',
+          url: 'github.com/joshpied/fin_track',
+          type: 'external'
+        },
+        {
           title: 'Scape',
           description:
             'Scape is a sharing economy mobile application that directly connects customer to workers providing landscaping services. Scape was built using NativeScript/Angular and a Firebase backend',

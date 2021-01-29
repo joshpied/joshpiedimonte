@@ -75,6 +75,7 @@ nav {
 @media only screen and (max-width: 520px) {
   .link {
     flex-direction: column;
+    align-items: center;
     font-size: 0.75em;
   }
 
