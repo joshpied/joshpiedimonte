@@ -16,6 +16,14 @@ export default {
     return {
       projects: [
         {
+          title: 'Hamilton Flyer Specials',
+          description:
+            'A weekly grocery flyer aggregator for Hamilton, Ontario that scrapes specials from local stores and presents them in a filterable, searchable interface. Built with Python',
+          imageUrl: 'hamilton-flyer.jpg',
+          url: 'github.com/joshpied/hamilton-specials',
+          type: 'external'
+        },
+        {
           title: 'Baker Buddy',
           description: `A baker's companion app built with React Native. Baker Buddy simplifies the process of manually calculating individual recipe measurements by taking the end dough weight and ingredient perctanges and the app handles the rest`,
           imageUrl: 'baker-buddy.jpg',

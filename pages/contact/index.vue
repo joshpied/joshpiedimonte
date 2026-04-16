@@ -6,16 +6,6 @@
         <figure class="contact-item">
           <img
             class="contact-icon"
-            src="/images/icons/mail.svg"
-            alt="E-mail icon"
-          />
-          <figcaption class="link-container">
-            <a class="link" href="mailto:joshpied@gmail.com">Email</a>
-          </figcaption>
-        </figure>
-        <figure class="contact-item">
-          <img
-            class="contact-icon"
             src="/images/icons/github.svg"
             alt="Github icon"
           />
