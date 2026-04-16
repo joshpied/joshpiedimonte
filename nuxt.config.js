@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   ssr: true,
   /*
    ** Headers of the page
